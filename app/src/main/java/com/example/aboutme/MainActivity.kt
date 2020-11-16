@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         //привязка переменной дата класса myName к полям в макете
+
 //        findViewById<Button>(R.id.button_done).setOnClickListener{
 //            addNickName(it)
         // теперь получаем доступ к элементам через binding
