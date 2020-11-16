@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         //привязка переменной дата класса myName к полям в макете
-
+        binding.myName = name
 //        findViewById<Button>(R.id.button_done).setOnClickListener{
 //            addNickName(it)
         // теперь получаем доступ к элементам через binding
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 //        val editText = findViewById<EditText>(R.id.nickname_edit)
 //        val nickNameTextView = findViewById<TextView>(R.id.nickname_text)
     binding.apply {
-        nicknameText.text = nicknameEdit.text
+        //nicknameText.text = nicknameEdit.text
         invalidateAll() // заново воссоздаем выражения привязки с новыми данными
         nicknameEdit.visibility = View.GONE
         buttonDone.visibility = View.GONE
