@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 //        val nickNameTextView = findViewById<TextView>(R.id.nickname_text)
     binding.apply {
         //nicknameText.text = nicknameEdit.text
-        myName.nickname = nicknameEdit.text.toString()
+        myName?.nickname = nicknameEdit.text.toString()
         invalidateAll() // заново воссоздаем выражения привязки с новыми данными
         nicknameEdit.visibility = View.GONE
         buttonDone.visibility = View.GONE
